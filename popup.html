@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        width: 250px;
+        padding: 10px;
+      }
+      button {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        background-color: #4285f4;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #357ae8;
+      }
+      .download {
+        color: #fff;
+        background: #34495e;
+      }
+      .screenshot {
+        color: #fff;
+        background: #2c3e50;
+      }
+      #processing {
+        text-align: center;
+        font-size: 18px;
+        color: red;
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="main">
+      <h2>Google Cache</h2>
+      <button id="downloadHtml" class="download">Download HTML</button>
+      <button id="fullPageScreenshot" class="screenshot">
+        Full Page Screenshot
+      </button>
+      <button id="aboveFoldScreenshot" class="screenshot">
+        Above Fold Screenshot
+      </button>
+    </div>
+
+    <div id="about">
+      <h3>About Google SERP Scraper</h3>
+      <p>
+        This extension allows you to download the full HTML of a search engine
+        results page (SERP) with a single click.
+      </p>
+      <p>
+        You can also get a full size screenshot <br />
+        (<b>BE SURE <u>NOT</u> TO CLICK, MOVE MOUSE WHEN IT IS CREATING</b>) or
+        above the fold.
+      </p>
+      <p>Currently in Beta - so be gentle.</p>
+      <p>Created by <a href="https://www.johnmurch.com">John Murch</a></p>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>
